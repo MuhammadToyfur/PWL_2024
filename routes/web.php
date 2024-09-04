@@ -72,3 +72,8 @@ Route::get('/posts/{post}/comments/{comment}', function
 Route::get('/user/{name?}', function ($name='John') {
     return 'Nama saya '.$name;
     });
+
+    //Praktikum 3
+
+    Route::get('/greeting', [WelcomeController::class, 
+    'greeting']);

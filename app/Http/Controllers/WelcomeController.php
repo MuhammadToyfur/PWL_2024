@@ -15,6 +15,11 @@ public function index() {
    public function articles($Id) {
     return 'Halaman Ke'.$Id;
    }
-
+   public function greeting(){
+    return view('blog.hello')
+    ->with('name','ZIDAN')
+    ->with('occupation','Astronaut');
+    }
 }
+
 
